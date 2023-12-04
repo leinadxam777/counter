@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial;
+    background-color: #f9f4ef;
+    position: relative;
+    top: 200px;
+}
+
+.container {
+    margin-top: -100px;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+#counter {
+    display: inline-block;
+    position: relative;
+    padding: 20px 80px;
+    margin-bottom: -20px;
+    color: #fffffe;
+    border: #020826 5px solid;
+    font-size: 50px;
+    background-color: #8c7851;
+}
+
+#counter:before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: -1;
+    height: 100px;
+    width: 350px;
+    background-color: #f25042;
+    border-right: 3px solid #f25042;
+    border-bottom: 3px solid #f25042;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#countDisplay {
+    color: #716040;
+    font-size: 150px;
+}
+
+button {
+    background-color: #8c7851;
+    color: #fffffe;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+    padding: 1rem 2rem 0.5rem 2.5rem;
+    border: 3px solid #020826;
+    -webkit-transition: padding 0.3s ease-in-out;
+    transition: padding 0.3s ease-in-out;
+}
+
+button:before {
+    content: "";
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    background-color: #f25042;
+    border-right: 3px solid #f25042;
+    border-bottom: 3px solid #f25042;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+    padding: 0.75rem 2.25rem;
+}
+
+button:hover:before {
+    top: 0;
+    left: 0;
+}
